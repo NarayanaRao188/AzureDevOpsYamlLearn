@@ -41,8 +41,8 @@ steps:
     ScriptType: 'FilePath'
     ScriptPath: './stgacccreation.ps1'
     ScriptArguments:
-      -$resourceGroup "test123-rg" `
-      -$location "westus"
+      -resourceGroup "test123-rg" `
+      -location "westus"
     azurePowerShellVersion: latestVersion
     pwsh: true
 
