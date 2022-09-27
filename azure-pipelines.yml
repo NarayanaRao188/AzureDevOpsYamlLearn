@@ -40,9 +40,10 @@ steps:
     azureSubscription: 'DemoSvcCon'
     ScriptType: 'FilePath'
     ScriptPath: './stgacccreation.ps1'
-    ScriptArguments:
-      -Arg1 "test123-rg" `
-      -Arg2 "westus"
+    ScriptArguments: >
+      -resourceGroup "test123-rg"
+      -location "westus"
     azurePowerShellVersion: latestVersion
     pwsh: true
+  displayName: dynamicparams
 
