@@ -21,8 +21,7 @@ steps:
   inputs:
     targetType: 'inline'
     script: |
-      # Write your PowerShell commands here.
-      
+      # Write your PowerShell commands here.      
       Write-Host "Hello World"
 # - task: PowerShell@2
 #   inputs:
@@ -32,3 +31,5 @@ steps:
   inputs:
     ScriptType: 'FilePath'
     ScriptPath: './stgacccreation.ps1'
+    azurePowerShellVersion: latestVersion
+    pwsh: true
