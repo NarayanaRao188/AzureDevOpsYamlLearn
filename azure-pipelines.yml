@@ -29,6 +29,7 @@ steps:
 
 - task: AzurePowerShell@5
   inputs:
+    azureSubscription: "Visual Studio Enterprise"
     ScriptType: 'FilePath'
     ScriptPath: './stgacccreation.ps1'
     azurePowerShellVersion: latestVersion
