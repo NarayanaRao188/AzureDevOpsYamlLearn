@@ -27,10 +27,20 @@ steps:
 #   inputs:
 #     filePath: './stgacccreation.ps1'
 
+# - task: AzurePowerShell@5
+#   inputs:
+#     azureSubscription: "DemoSvcCon"
+#     ScriptType: 'FilePath'
+#     ScriptPath: './stgacccreation.ps1'
+#     azurePowerShellVersion: latestVersion
+#     pwsh: true
+
 - task: AzurePowerShell@5
   inputs:
-    azureSubscription: "DemoSvcCon"
+    azureSubscription: 'DemoSvcCon'
     ScriptType: 'FilePath'
     ScriptPath: './stgacccreation.ps1'
+    ScriptArguments: '$resourceGroup ="test123-rg", $location="westus"'
     azurePowerShellVersion: latestVersion
     pwsh: true
+
