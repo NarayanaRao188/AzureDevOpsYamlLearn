@@ -40,7 +40,9 @@ steps:
     azureSubscription: 'DemoSvcCon'
     ScriptType: 'FilePath'
     ScriptPath: './stgacccreation.ps1'
-    ScriptArguments: '$resourceGroup ="test123-rg", $location="westus"'
+    ScriptArguments:
+      -$resourceGroup "test123-rg" `
+      -$location "westus"
     azurePowerShellVersion: latestVersion
     pwsh: true
 
