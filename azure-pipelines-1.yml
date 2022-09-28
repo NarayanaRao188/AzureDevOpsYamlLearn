@@ -22,7 +22,7 @@ steps:
   inputs:
     azureSubscription: 'DemoSvcCon'
     ScriptType: 'FilePath'
-    ScriptPath: './testps1'
+    ScriptPath: './test.ps1'
     ScriptArguments: >
       -input1 "hello ask"
       -input2 "demo"
