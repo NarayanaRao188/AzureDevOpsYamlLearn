@@ -25,6 +25,7 @@ steps:
     ScriptPath: './listofrsg.ps1'
     ScriptArguments: >
       -resourceGroupNames "demo0987", "demo2345"
+      -location "eastus"
     pwsh: true
     azurePowerShellVersion: latestVersion
   displayName: rsgs
