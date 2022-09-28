@@ -2,5 +2,5 @@
 param($resourceGroupNames = @(),$location)
 foreach($rsg in $resourceGroupNames)
 {
-New-AzResourceGroup -Name $resourceGroup -Location $location
+New-AzResourceGroup -Name $rsg -Location $location
 }
