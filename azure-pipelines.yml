@@ -43,6 +43,7 @@ steps:
     ScriptArguments: >
       -resourceGroup "test123-rg"
       -location "westus"
+      -stgname "demostg12345ourt6"
     azurePowerShellVersion: latestVersion
     pwsh: true
   displayName: dynamicparams
