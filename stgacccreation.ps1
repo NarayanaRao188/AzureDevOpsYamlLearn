@@ -1,9 +1,8 @@
 ﻿
-$resourceGroup
-$location
+param($resourceGroup,$location, $stgname)
 New-AzResourceGroup -Name $resourceGroup -Location $location
 New-AzStorageAccount -ResourceGroupName $resourceGroup `
-  -Name "demostgps123098" `
+  -Name $stgname `
   -Location $location `
   -SkuName Standard_LRS `
   -Kind StorageV2
